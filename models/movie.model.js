@@ -1,12 +1,12 @@
 const { Schema, model } = require('mongoose');
 
-const CelebritySchema = new Schema({
+const MovieSchema = new Schema({
   name: String,
   occupation: String,
   catchPhrase: String
 });
 
-const Celeb = model("Celebrity", CelebritySchema);
+const Movie = model("Movie", MovieSchema);
 
-module.exports = Celeb;
+module.exports = Movie;
 
