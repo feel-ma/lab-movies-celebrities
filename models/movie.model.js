@@ -1,9 +1,10 @@
 const { Schema, model } = require('mongoose');
 
 const MovieSchema = new Schema({
-  name: String,
-  occupation: String,
-  catchPhrase: String
+  title: String,
+  genre: String,
+  plot: String,
+  cast:[{type:Schema.Types.ObjectId, ref: "Celebrity"}]
 });
 
 const Movie = model("Movie", MovieSchema);

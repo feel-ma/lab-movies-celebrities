@@ -29,6 +29,8 @@ const index = require('./routes/index');
 app.use('/', index);
 const celebritiesRouter = require('./routes/celebrities.routes');
 app.use('/', celebritiesRouter);
+const moviesRouter = require('./routes/movies.routes');
+app.use('/', moviesRouter);
 
 
 

@@ -1,0 +1,15 @@
+<h2>ADD NEW Movie</h2>
+<form action="/newMovie" method="POST">
+    <input type="text" placeholder="Title" name="title" id="title">
+     <input type="text" placeholder="Genre" name="genre" id="genre">
+      <input type="text" placeholder="Plot" name="plot" id="plot">
+     <label for="celebrity-select">Celeb inside
+        <select name="Celebrity" >
+            <option disable selected value=""></option>
+             {{#each celeb}}
+    <option value=" {{this._id}}">{{this.name}}</option>
+    {{/each}}
+        </select>
+     </label>
+      <input type="submit" value="Submit new Movie">
+</form>
